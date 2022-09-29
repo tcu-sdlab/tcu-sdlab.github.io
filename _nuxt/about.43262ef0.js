@@ -1,0 +1,1 @@
+import{C as t,o,p as s,J as a,E as n,F as c,G as _,K as r,L as l}from"./entry.3c805ab3.js";const u={},d=_("h1",null,"This is index Page",-1),i=l(" test ");function x(f,m){const e=r;return o(),s(c,null,[d,a(e,null,{default:n(()=>[i]),_:1})],64)}const h=t(u,[["render",x]]);export{h as default};

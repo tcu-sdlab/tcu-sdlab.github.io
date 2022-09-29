@@ -1,0 +1,1 @@
+import"./LatestNews.vue_vue_type_script_setup_true_lang.c0cf3341.js";import{_ as i}from"./LatestNews.vue_vue_type_script_setup_true_lang.c0cf3341.js";import"./RecordCard.2220751d.js";import"./entry.3c805ab3.js";export{i as default};
