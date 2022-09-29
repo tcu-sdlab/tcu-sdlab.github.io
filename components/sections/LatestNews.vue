@@ -20,7 +20,6 @@ const { data: articles } = useAsyncData("articles", () =>
             v-for="article in articles"
             :key="article._path"
             :record="article" />
-        {{ articles }}
       </div>
     </div>
   </section>
