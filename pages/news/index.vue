@@ -1,15 +1,18 @@
+<script setup lang="ts">
+const { data: articles } = useAsyncData("articles", () => queryContent('news').sort({createdAt: -1}).find())
+</script>
 <template>
   <NuxtLayout>
     <PageHeader>
       <template v-slot:image>
-        <g-image src="~/assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg" />
+        <img src="~/assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg" />
       </template>
       <template v-slot:content>
         <p class="text-4xl md:text-6xl">
           News
         </p>
-        <p
-            class="text-lg md:text-2xl">
+        <p class="text-lg md:text-2xl">
+            藤原研の活動履歴
           <!-- We have currently {{ $page.records.totalCount }} entries in our list -->
         </p>
       </template>
@@ -18,6 +21,10 @@
     <div class="container px-5 py-12 mx-auto">
       <section>
         <div class="flex flex-wrap -m-4">
+            <RecordCard
+                v-for="article in articles"
+                :key="article._path"
+                :record="article" />
           <!--
           <RecordCard
               v-for="edge in $page.records.edges"
@@ -25,7 +32,6 @@
               :record="edge.node" />
              -->
         </div>
-        開発中
       </section>
       <!--
       <div

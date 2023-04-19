@@ -17,9 +17,8 @@
 
     <div class="container px-5 py-12 mx-auto">
       <p>
-        TBD
+        しばらくは藤原の<a href="https://niyaton.github.io/publications" class="text-smalt-blue-500 hover:text-black">個人ページの業績一覧</a>を参照してください．
       </p>
     </div>
   </NuxtLayout>
 </template>
-

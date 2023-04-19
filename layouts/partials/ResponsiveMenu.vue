@@ -61,7 +61,7 @@ function close() {
           </NuxtLink>
         </li><li>
           <NuxtLink
-            to="/resources"
+            to="/publications"
             class="inline-block mb-5"
             exact>
             Publications
@@ -75,7 +75,7 @@ function close() {
           </NuxtLink>
         </li><li>
           <NuxtLink
-            to="/pages/access"
+            to="/articles/access"
             class="inline-block mb-5"
             exact>
             Access

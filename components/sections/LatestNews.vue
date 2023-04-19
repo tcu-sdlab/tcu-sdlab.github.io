@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import RecordCard from '~/components/RecordCard'
 const { data: articles } = useAsyncData("articles", () =>
-    queryContent('news').sort( {createdAt: 1}).limit(6).find());
+    queryContent('news').sort( {createdAt: -1}).limit(6).find());
 </script>
 
 <template>

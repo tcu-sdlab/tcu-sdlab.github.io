@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import HeaderPartial from '~/layouts/partials/Header'
-import FooterPartial from '~/layouts/partials/Footer'
+import HeaderPartial from '~/layouts/partials/Header.vue'
+import FooterPartial from '~/layouts/partials/Footer.vue'
 import ResponsiveMenuPartial from '~/layouts/partials/ResponsiveMenu.vue'
 
 const showResponsiveMenu = ref(false)

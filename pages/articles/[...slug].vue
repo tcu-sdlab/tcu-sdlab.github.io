@@ -6,7 +6,7 @@ const { data: article } = useAsyncData("article", () => queryContent(useRoute().
     <PageHeader>
       <template v-slot:content>
         <h1 class="text-4xl lg:text-6xl">
-          {{ article.title }}
+          {{ article?.title }}
         </h1>
       </template>
       <!-- TODO add image support but current Nuxt3 cause error when use v-if in template

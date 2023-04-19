@@ -13,14 +13,14 @@
         <div
           v-if="record.excerpt"
           class="leading-relaxed mb-12 text-gray-800 text-left"
-          v-html="record.excerpt" />
+          v-html="record.description" />
         <div class="flex items-center flex-wrap absolute bottom-0 -ml-6 p-6 w-full">
           <div class="w-2/3 text-left">
             <slot name="link">
               <NuxtLink
                 :to="record._path"
                 class="text-smalt-blue-500 hover:text-black inline-flex items-center">
-                Continue reading
+                続きを読む
                 <svg
                   class="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
