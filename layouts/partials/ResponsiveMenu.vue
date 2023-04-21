@@ -6,22 +6,9 @@ interface Props {
 const props = defineProps<Props>()
 const emit = defineEmits(['closeResponsiveMenu'])
 
-function close() {
-  emit('closeResponsiveMenu')
+const close = () => {
+    emit('closeResponsiveMenu')
 }
-// export default {
-//   props: {
-//     showResponsiveMenu: {
-//       required: true,
-//       type: Boolean
-//     }
-//   },
-//   methods: {
-//     close () {
-//       this.$emit('closeResponsiveMenu');
-//     }
-//   }
-// }
 </script>
 <template>
   <div

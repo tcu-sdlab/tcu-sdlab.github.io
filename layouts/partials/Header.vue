@@ -1,15 +1,9 @@
 <script lang="ts" setup>
 const emit = defineEmits(['openResponsiveMenu'])
 const appConfig = useAppConfig()
-// export default {
-//   methods: {
-//     showResponsiveMenu () {
-//       this.$emit('openResponsiveMenu');
-//     }
-//   }
-// };
-function showResponsiveMenu() {
-  emit('openResponsiveMenu')
+
+const showResponsiveMenu = () => {
+    emit('openResponsiveMenu')
 }
 
 </script>
