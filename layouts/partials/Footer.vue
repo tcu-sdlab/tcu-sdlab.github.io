@@ -2,13 +2,6 @@
 const appConfig = useAppConfig()
 const currentYear = new Date().getFullYear()
 const fromYear = 2021
-// export default {
-//   data () {
-//     return {
-//       currentYear: new Date().getFullYear()
-//     }
-//   }
-// }
 </script>
 
 <template>
@@ -31,19 +24,6 @@ const fromYear = 2021
           © {{ fromYear }} - {{ currentYear }} {{ appConfig.siteName }}
         </div>
         <div class="footer-links inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
-          <!--
-          <g-link
-            to="/pages/sample-page-1"
-            class="mr-4">
-            Sample Page 1
-          </g-link>
-
-          <g-link
-            to="/pages/sample-page-2"
-            class="mr-4">
-            Sample Page 2
-          </g-link>
-          -->
           <NuxtLink to="/credits">
             Credits
           </NuxtLink>

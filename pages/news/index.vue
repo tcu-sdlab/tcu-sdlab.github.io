@@ -25,12 +25,6 @@ const { data: articles } = useAsyncData("articles", () => queryContent('news').s
                 v-for="article in articles"
                 :key="article._path"
                 :record="article" />
-          <!--
-          <RecordCard
-              v-for="edge in $page.records.edges"
-              :key="edge.node.id"
-              :record="edge.node" />
-             -->
         </div>
       </section>
       <!--
@@ -50,27 +44,25 @@ const { data: articles } = useAsyncData("articles", () => queryContent('news').s
 <!--
 <page-query>
 query ($page: Int) {
-records: allNews(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
-totalCount
-pageInfo {
-totalPages
-currentPage
-}
-edges {
-node {
-title
-path
-excerpt
-createdAt(format:"Do MMMM YYYY")
-timeToRead
-}
-}
-}
+  records: allNews(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
+    totalCount
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        title
+        path
+        excerpt
+        createdAt(format:"Do MMMM YYYY")
+        timeToRead
+      }
+    }
+  }
 }
 </page-query>
 <script>
-import PageHeader from '~/components/PageHeader'
-import RecordCard from '~/components/RecordCard'
 import Pagination from '~/components/Pagination'
 
 export default {
@@ -78,9 +70,7 @@ export default {
     title: 'Browse News'
   },
   components: {
-    PageHeader,
     Pagination,
-    RecordCard
   }
 };
 </script>

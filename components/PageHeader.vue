@@ -6,6 +6,7 @@ const slots = useSlots();
 const hasImage = computed(() => !!slots['image']);
 
 </script>
+
 <template>
   <section
     class="relative z-0 h-64 flex flex-wrap content-center page-header"

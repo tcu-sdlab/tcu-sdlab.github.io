@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import RecordCard from '~/components/RecordCard'
 const { data: articles } = useAsyncData("articles", () =>
     queryContent('news').sort( {createdAt: -1}).limit(6).find());
 </script>
@@ -24,21 +23,3 @@ const { data: articles } = useAsyncData("articles", () =>
     </div>
   </section>
 </template>
-<!--
-<static-query>
-  query {
-    records: allNews(limit:6, sortBy:"createdAt") {
-      edges {
-        node { // TODO not support only picking these 5 attributes because pick option of useAsyncData is not suitable for array response.
-          title
-          path
-          excerpt
-          createdAt(format:"Do MMMM YYYY")
-          timeToRead
-        }
-      }
-    }
-  }
-</static-query>
--->
-

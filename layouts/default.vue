@@ -2,11 +2,11 @@
 import HeaderPartial from '~/layouts/partials/Header.vue'
 import FooterPartial from '~/layouts/partials/Footer.vue'
 import ResponsiveMenuPartial from '~/layouts/partials/ResponsiveMenu.vue'
+import { Ref } from "vue";
 
-const showResponsiveMenu = ref(false)
+const showResponsiveMenu: Ref<boolean> = ref(false)
 
 function openResponsiveMenu () {
-  console.log("hogehoge")
   showResponsiveMenu.value = true;
 }
 
