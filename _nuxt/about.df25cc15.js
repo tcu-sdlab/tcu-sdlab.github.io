@@ -1,0 +1,1 @@
+import{_ as t}from"./layout.6373b737.js";import{k as o,l as a,R as n,w as s,S as c,U as _,o as r,V as l}from"./entry.62fcd706.js";const u={},d=_("h1",null,"This is index Page",-1);function i(m,f){const e=t;return r(),a(c,null,[d,n(e,null,{default:s(()=>[l(" test ")]),_:1})],64)}const h=o(u,[["render",i]]);export{h as default};
